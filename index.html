@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self Check-in Guide - Costalita H</title>
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  margin: 0;
+  background: #f2f2f7;
+  color: #1c1c1e;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 28px;
+  font-size: 1.2em;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* HERO IMAGE */
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 15px 0;
+}
+
+/* SINGLE IMAGES */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 12px;
+  display: block;
+}
+
+/* INTERIOR GRID (FIXED) */
+.photo-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.photo-row img {
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* LANGUAGE */
+.lang-switch {
+  text-align: center;
+}
+
+.lang-btn {
+  border: none;
+  background: #e5e5ea;
+  padding: 10px 16px;
+  margin: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.8em;
+  line-height: 1;
+}
+
+.lang-btn.active {
+  background: #007aff;
+  color: white;
+}
+
+/* LINKS */
+a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+/* WHATSAPP */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 data-i18n="title">🏡 Self Check-in Guide</h1>
+
+<div class="lang-switch">
+<button class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧</button>
+<button class="lang-btn" data-lang="es" onclick="setLanguage('es')">🇪🇸</button>
+<button class="lang-btn" data-lang="fr" onclick="setLanguage('fr')">🇫🇷</button>
+<button class="lang-btn" data-lang="de" onclick="setLanguage('de')">🇩🇪</button>
+</div>
+
+<img class="hero-img" src="images/hero.jpg" alt="Costalita H pool and gardens">
+
+<h2 data-i18n="access">🔑 Access</h2>
+<div class="card">
+<p data-i18n-html="access_text"></p>
+<p data-i18n-html="access_text2"></p>
+<img src="images/route-map.jpg" alt="Map showing the route from the entry gate to the Marbella Building">
+</div>
+
+<div class="card">
+<p data-i18n="access_key"></p>
+<p data-i18n="access_remote"></p>
+</div>
+
+<h2 data-i18n="wifi">📶 Wi-Fi</h2>
+<div class="card">
+<p><strong data-i18n="wifi_network_label">Network:</strong> Costalita_1F</p>
+<p><strong data-i18n="wifi_password_label">Password:</strong> estepona</p>
+</div>
+
+<h2 data-i18n="ac">❄️ Air Conditioning & Heating</h2>
+<div class="card">
+<p data-i18n="ac_text"></p>
+</div>
+
+<h2 data-i18n="linens">🛏️ Towels & Linens</h2>
+<div class="card">
+<p data-i18n="linens_text"></p>
+</div>
+
+<h2 data-i18n="beach">🏖️ Beach Access</h2>
+<div class="card">
+<div data-i18n-html="beach_text"></div>
+</div>
+
+<h2 data-i18n="supermarkets">🛒 Supermarkets</h2>
+<div class="card">
+<ul>
+<li><a href="https://maps.app.goo.gl/jV7iJGaaGJYf3X6GA" target="_blank">Lidl</a></li>
+<li><a href="https://maps.app.goo.gl/jsNqX5ZrAQHbctuM6" target="_blank">Mercadona</a></li>
+<li><a href="https://maps.app.goo.gl/zNobwSb1d1TQyERr8" target="_blank" data-i18n="supermarket_gas_station">Gasolinera El Saladillo (convenience store)</a></li>
+</ul>
+</div>
+
+<h2 data-i18n="guide">📍 Local Guide</h2>
+<div class="card">
+<p data-i18n="guide_text"></p>
+<p>👉 <a href="https://maps.app.goo.gl/1YgKZzKivLs8c3237" target="_blank" data-i18n="guide_link1">Restaurants & Spots</a></p>
+<p>👉 <a href="https://maps.app.goo.gl/56Yh8cR3Par8S8hLA" target="_blank" data-i18n="guide_link2">Places to Visit</a></p>
+<p>👉 <a href="https://turismo.estepona.es/agenda/" target="_blank" data-i18n="guide_link3">Events - Estepona Tourist Office</a></p>
+</div>
+
+<h2 data-i18n="airport">✈️ Getting Here from the Airport</h2>
+<div class="card">
+<div data-i18n-html="airport_text"></div>
+</div>
+
+<h2 data-i18n="stove">🔥 Stove / Hob</h2>
+<div class="card">
+<p data-i18n="stove_text"></p>
+<img id="stove-img" src="images/stove-en.jpg" alt="Instructions for lighting the stove">
+</div>
+
+<h2 data-i18n="contact">📞 Contact</h2>
+<div class="card">
+<p data-i18n="contact_text"></p>
+<p><strong>Leandro</strong> · <a href="tel:+34684335725">+34 684 335 725</a></p>
+</div>
+
+<h2 data-i18n="enjoy">😊 Enjoy your stay!</h2>
+
+</div>
+
+<a class="whatsapp-btn" href="https://wa.me/34684335725?text=Hi%20Leandro,%20we%20just%20arrived" target="_blank">
+<span data-i18n="whatsapp_btn">💬 Contact host</span>
+</a>
+
+<script>
+const t = {
+en:{
+title:"🏡 Self Check-in Guide",
+access:"🔑 Access",
+access_text:"Once you arrive at <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a>, please send me a message or call me at <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a> so we can open the parking gate for you. To park closer to the apartment, drive toward the end of the parking lot on the left-hand side — you can park anywhere you'd like.",
+access_text2:"Follow the path between the buildings (marked with a red dashed line on the map below). We are located at the <strong>Marbella Building</strong>, the second building on your left, and the apartment is on the <strong>1st floor (Apartment 1F)</strong>.",
+access_key:"🔑 The key to enter the apartment will be inside the key box.",
+access_remote:"🚗 For your convenience, there's a remote control for the parking gate inside the apartment.",
+wifi:"📶 Wi-Fi",
+wifi_network_label:"Network:",
+wifi_password_label:"Password:",
+ac:"❄️ Air Conditioning & Heating",
+ac_text:"Please ensure all windows and doors are fully closed when using the air conditioning or heating. Otherwise, the system may shut down automatically. If the red light next to the A/C unit is on, it usually means a window or door is still open.",
+linens:"🛏️ Towels & Linens",
+linens_text:"You'll find extra towels and sheets for the bed in the cabinet in the hallway.",
+stove:"🔥 Stove / Hob",
+stove_text:"To light the central burner: turn the knob all the way and hold it for 2-3 seconds until it stays lit.",
+supermarkets:"🛒 Supermarkets",
+supermarket_gas_station:"Gasolinera El Saladillo (convenience store)",
+guide:"📍 Local Guide",
+guide_text:"Our favorite local spots and places to explore:",
+guide_link1:"Restaurants & Spots",
+guide_link2:"Places to Visit",
+guide_link3:"Events - Estepona Tourist Office",
+airport:"✈️ Getting Here from the Airport",
+airport_text:"<p>The apartment is about a 45-55 minute drive from Málaga Airport (AGP). A few ways to get here:</p><p><strong>🚌 Bus (Avanza)</strong><br>You have two options: ride the direct Avanzabus all the way to Estepona's main bus terminal and take a taxi or Uber/Bolt from there (about 15 minutes), or take the airport bus to Marbella bus station, then transfer to a Marbella–Estepona bus (line <strong>79</strong> or <strong>70</strong>) and get off at the <strong>Flamingos Golf</strong> stop — just let the driver know. From there it's about a 10-15 minute walk to the apartment.</p><p><strong>🚕 Taxi</strong><br>Radio Taxi Estepona – <a href='tel:+34952802900'>+34 952 802 900</a>. Pre-booked pickup direct from the airport, fixed metered fare.</p><p><strong>🚗 Uber / Bolt</strong><br>Both operate between Málaga Airport and Estepona – a convenient door-to-door option, book directly from the app.</p><p><strong>🚐 Private Transfers</strong></p><ul><li><a href='https://www.happytransfers.es' target='_blank'>Happy Transfers</a> – pre-booked private transfer with meet & greet at arrivals</li><li><a href='https://costasoltransport.com' target='_blank'>Costasol Deluxe Transports</a> – private/executive transfer service</li></ul>",
+beach:"🏖️ Beach Access",
+beach_text:"<p>From the swimming pool there's a private path on the left side leading directly down to the beach.</p><p>There are 2 gates on this path:</p><ul><li><strong>Gate 1:</strong> Use the key provided with the apartment key</li><li><strong>Gate 2:</strong> Use code <strong>1599</strong></li></ul>",
+contact:"📞 Contact",
+contact_text:"Please don't hesitate to contact us if you have any questions.",
+enjoy:"😊 Enjoy your stay!",
+whatsapp_btn:"💬 Contact host"
+},
+es:{
+title:"🏡 Guía de Check-in",
+access:"🔑 Acceso",
+access_text:"Al llegar a <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a>, por favor envíame un mensaje o llámame al <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a> para abrirte la puerta del parking. Para aparcar más cerca del apartamento, conduce hacia el final del parking, en el lado izquierdo — puedes aparcar donde quieras.",
+access_text2:"Sigue el camino entre los edificios (marcado con una línea roja discontinua en el mapa de abajo). Estamos ubicados en el <strong>Edificio Marbella</strong>, el segundo edificio a tu izquierda, y el apartamento está en el <strong>1º piso (Apartamento 1F)</strong>.",
+access_key:"🔑 La llave para entrar al apartamento estará dentro de la caja de seguridad.",
+access_remote:"🚗 Para tu comodidad, hay un mando a distancia para la puerta del parking dentro del apartamento.",
+wifi:"📶 Wi-Fi",
+wifi_network_label:"Red:",
+wifi_password_label:"Contraseña:",
+ac:"❄️ Aire Acondicionado y Calefacción",
+ac_text:"Por favor, asegúrate de que todas las ventanas y puertas estén bien cerradas cuando uses el aire acondicionado o la calefacción. De lo contrario, el sistema podría apagarse automáticamente. Si la luz roja junto al aparato de aire acondicionado está encendida, normalmente significa que una ventana o puerta sigue abierta.",
+linens:"🛏️ Toallas y Ropa de Cama",
+linens_text:"Encontrarás toallas y sábanas adicionales para la cama en el armario del pasillo.",
+stove:"🔥 Vitrocerámica / Cocina",
+stove_text:"Para encender el fuego central: gira el mando hasta el final y mantenlo así durante 2-3 segundos hasta que se quede encendido.",
+supermarkets:"🛒 Supermercados",
+supermarket_gas_station:"Gasolinera El Saladillo (tienda de conveniencia)",
+guide:"📍 Guía Local",
+guide_text:"Nuestros sitios favoritos:",
+guide_link1:"Restaurantes y lugares",
+guide_link2:"Sitios para visitar",
+guide_link3:"Eventos - Oficina de Turismo de Estepona",
+airport:"✈️ Cómo llegar desde el aeropuerto",
+airport_text:"<p>El apartamento está a unos 45-55 minutos en coche del Aeropuerto de Málaga (AGP). Algunas formas de llegar:</p><p><strong>🚌 Autobús (Avanza)</strong><br>Tienes dos opciones: coger el Avanzabus directo hasta la estación de autobuses de Estepona y luego un taxi o Uber/Bolt desde allí (unos 15 minutos), o coger el autobús del aeropuerto hasta la estación de autobuses de Marbella, hacer transbordo a un autobús Marbella–Estepona (línea <strong>79</strong> o <strong>70</strong>) y bajarte en la parada <strong>Flamingos Golf</strong> — solo dile al conductor. Desde allí son unos 10-15 minutos andando hasta el apartamento.</p><p><strong>🚕 Taxi</strong><br>Radio Taxi Estepona – <a href='tel:+34952802900'>+34 952 802 900</a>. Recogida reservada directamente desde el aeropuerto, tarifa fija por taxímetro.</p><p><strong>🚗 Uber / Bolt</strong><br>Ambos operan entre el Aeropuerto de Málaga y Estepona – una opción cómoda puerta a puerta, reserva directamente desde la app.</p><p><strong>🚐 Traslados privados</strong></p><ul><li><a href='https://www.happytransfers.es' target='_blank'>Happy Transfers</a> – traslado privado reservado con recibimiento en llegadas</li><li><a href='https://costasoltransport.com' target='_blank'>Costasol Deluxe Transports</a> – servicio de traslado privado/ejecutivo</li></ul>",
+beach:"🏖️ Acceso a la Playa",
+beach_text:"<p>Desde la piscina hay un camino privado en el lado izquierdo que baja directamente hacia la playa.</p><p>Hay 2 puertas en este camino:</p><ul><li><strong>Puerta 1:</strong> Usa la llave del apartamento</li><li><strong>Puerta 2:</strong> Usa el código <strong>1599</strong></li></ul>",
+contact:"📞 Contacto",
+contact_text:"No dudes en contactarnos si tienes alguna pregunta.",
+enjoy:"😊 ¡Disfruta tu estancia!",
+whatsapp_btn:"💬 Contactar al anfitrión"
+},
+fr:{
+title:"🏡 Guide d'arrivée",
+access:"🔑 Accès",
+access_text:"À votre arrivée à <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a>, merci de m'envoyer un message ou de m'appeler au <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a> afin que nous puissions vous ouvrir le portail du parking. Pour vous garer plus près de l'appartement, avancez vers le fond du parking, côté gauche — vous pouvez vous garer où vous le souhaitez.",
+access_text2:"Suivez le chemin entre les bâtiments (indiqué par une ligne rouge en pointillés sur la carte ci-dessous). Nous sommes situés au <strong>Bâtiment Marbella</strong>, le deuxième bâtiment sur votre gauche, et l'appartement se trouve au <strong>1er étage (Appartement 1F)</strong>.",
+access_key:"🔑 La clé pour entrer dans l'appartement se trouve dans la boîte à clés.",
+access_remote:"🚗 Pour votre confort, une télécommande pour le portail du parking se trouve à l'intérieur de l'appartement.",
+wifi:"📶 Wi-Fi",
+wifi_network_label:"Réseau :",
+wifi_password_label:"Mot de passe :",
+ac:"❄️ Climatisation",
+ac_text:"Merci de vous assurer que toutes les fenêtres et portes sont bien fermées lorsque vous utilisez la climatisation ou le chauffage. Sinon, le système peut s'arrêter automatiquement. Si le voyant rouge situé à côté de l'appareil de climatisation est allumé, cela signifie généralement qu'une fenêtre ou une porte est encore ouverte.",
+linens:"🛏️ Serviettes et Linge de Lit",
+linens_text:"Vous trouverez des serviettes et des draps supplémentaires pour le lit dans le placard du couloir.",
+stove:"🔥 Plaque de cuisson",
+stove_text:"Pour allumer le brûleur central : tournez le bouton à fond et maintenez-le pendant 2-3 secondes jusqu'à ce qu'il reste allumé.",
+supermarkets:"🛒 Supermarchés",
+supermarket_gas_station:"Gasolinera El Saladillo (supérette)",
+guide:"📍 Guide Local",
+guide_text:"Nos recommandations:",
+guide_link1:"Restaurants & lieux",
+guide_link2:"Lieux à visiter",
+guide_link3:"Événements - Office de Tourisme d'Estepona",
+airport:"✈️ Comment venir depuis l'aéroport",
+airport_text:"<p>L'appartement se trouve à environ 45-55 minutes de route de l'aéroport de Málaga (AGP). Voici quelques façons de venir :</p><p><strong>🚌 Bus (Avanza)</strong><br>Vous avez deux options : prendre l'Avanzabus direct jusqu'à la gare routière d'Estepona puis un taxi ou Uber/Bolt depuis là-bas (environ 15 minutes), ou prendre le bus de l'aéroport jusqu'à la gare routière de Marbella, puis correspondance avec un bus Marbella–Estepona (ligne <strong>79</strong> ou <strong>70</strong>) et descendre à l'arrêt <strong>Flamingos Golf</strong> — indiquez-le simplement au chauffeur. De là, comptez environ 10-15 minutes à pied jusqu'à l'appartement.</p><p><strong>🚕 Taxi</strong><br>Radio Taxi Estepona – <a href='tel:+34952802900'>+34 952 802 900</a>. Prise en charge réservée directement à l'aéroport, tarif fixe au compteur.</p><p><strong>🚗 Uber / Bolt</strong><br>Les deux services opèrent entre l'aéroport de Málaga et Estepona – une option pratique de porte à porte, réservez directement depuis l'application.</p><p><strong>🚐 Transferts privés</strong></p><ul><li><a href='https://www.happytransfers.es' target='_blank'>Happy Transfers</a> – transfert privé réservé avec accueil à l'arrivée</li><li><a href='https://costasoltransport.com' target='_blank'>Costasol Deluxe Transports</a> – service de transfert privé/exécutif</li></ul>",
+beach:"🏖️ Accès à la Plage",
+beach_text:"<p>Depuis la piscine, un chemin privé sur la gauche descend directement vers la plage.</p><p>Il y a 2 portails sur ce chemin :</p><ul><li><strong>Portail 1 :</strong> Utilisez la clé fournie avec l'appartement</li><li><strong>Portail 2 :</strong> Utilisez le code <strong>1599</strong></li></ul>",
+contact:"📞 Contact",
+contact_text:"N'hésitez pas à nous contacter si vous avez des questions.",
+enjoy:"😊 Bon séjour !",
+whatsapp_btn:"💬 Contacter l'hôte"
+},
+de:{
+title:"🏡 Check-in Anleitung",
+access:"🔑 Zugang",
+access_text:"Bei Ankunft in der <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a> schreiben Sie mir bitte eine Nachricht oder rufen Sie mich an unter <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a>, damit wir Ihnen das Parktor öffnen können. Um näher an der Wohnung zu parken, fahren Sie bis zum Ende des Parkplatzes auf der linken Seite — Sie können überall parken.",
+access_text2:"Folgen Sie dem Weg zwischen den Gebäuden (auf der Karte unten rot gestrichelt markiert). Wir befinden uns im <strong>Gebäude Marbella</strong>, dem zweiten Gebäude auf der linken Seite, die Wohnung befindet sich im <strong>1. Stock (Wohnung 1F)</strong>.",
+access_key:"🔑 Der Schlüssel für die Wohnung befindet sich in der Schlüsselbox.",
+access_remote:"🚗 Zu Ihrer Bequemlichkeit befindet sich eine Fernbedienung für das Parktor in der Wohnung.",
+wifi:"📶 WLAN",
+wifi_network_label:"Netzwerk:",
+wifi_password_label:"Passwort:",
+ac:"❄️ Klimaanlage",
+ac_text:"Bitte stellen Sie sicher, dass alle Fenster und Türen vollständig geschlossen sind, wenn Sie die Klimaanlage oder die Heizung benutzen. Andernfalls kann sich das System automatisch ausschalten. Wenn die rote Leuchte neben dem Klimagerät leuchtet, bedeutet das normalerweise, dass noch ein Fenster oder eine Tür offen ist.",
+linens:"🛏️ Handtücher und Bettwäsche",
+linens_text:"Zusätzliche Handtücher und Bettlaken finden Sie im Schrank im Flur.",
+stove:"🔥 Herd / Kochfeld",
+stove_text:"So zünden Sie den mittleren Brenner: Drehknopf bis zum Anschlag drehen und 2-3 Sekunden halten, bis er brennt.",
+supermarkets:"🛒 Supermärkte",
+supermarket_gas_station:"Gasolinera El Saladillo (Tankstellenshop)",
+guide:"📍 Lokaler Guide",
+guide_text:"Unsere Empfehlungen:",
+guide_link1:"Restaurants & Orte",
+guide_link2:"Sehenswürdigkeiten",
+guide_link3:"Veranstaltungen - Touristenbüro Estepona",
+airport:"✈️ Anreise vom Flughafen",
+airport_text:"<p>Die Wohnung liegt etwa 45-55 Autominuten vom Flughafen Málaga (AGP) entfernt. Hier einige Möglichkeiten, herzukommen:</p><p><strong>🚌 Bus (Avanza)</strong><br>Sie haben zwei Möglichkeiten: mit dem direkten Avanzabus bis zum Hauptbusbahnhof von Estepona fahren und von dort ein Taxi oder Uber/Bolt nehmen (ca. 15 Minuten), oder mit dem Flughafenbus bis zum Busbahnhof Marbella fahren, dort in einen Bus der Linie Marbella–Estepona (Linie <strong>79</strong> oder <strong>70</strong>) umsteigen und an der Haltestelle <strong>Flamingos Golf</strong> aussteigen — sagen Sie es einfach dem Fahrer. Von dort sind es etwa 10-15 Gehminuten zur Wohnung.</p><p><strong>🚕 Taxi</strong><br>Radio Taxi Estepona – <a href='tel:+34952802900'>+34 952 802 900</a>. Vorbestellte Abholung direkt am Flughafen, Festpreis nach Taxameter.</p><p><strong>🚗 Uber / Bolt</strong><br>Beide Dienste verkehren zwischen dem Flughafen Málaga und Estepona – eine bequeme Tür-zu-Tür-Option, direkt über die App buchen.</p><p><strong>🚐 Private Transfers</strong></p><ul><li><a href='https://www.happytransfers.es' target='_blank'>Happy Transfers</a> – vorbestellter privater Transfer mit Empfang bei der Ankunft</li><li><a href='https://costasoltransport.com' target='_blank'>Costasol Deluxe Transports</a> – privater/exklusiver Transferservice</li></ul>",
+beach:"🏖️ Strandzugang",
+beach_text:"<p>Vom Pool aus führt ein privater Weg auf der linken Seite direkt hinunter zum Strand.</p><p>Auf diesem Weg gibt es 2 Tore:</p><ul><li><strong>Tor 1:</strong> Benutzen Sie den Schlüssel der Wohnung</li><li><strong>Tor 2:</strong> Benutzen Sie den Code <strong>1599</strong></li></ul>",
+contact:"📞 Kontakt",
+contact_text:"Kontaktieren Sie uns gerne bei Fragen.",
+enjoy:"😊 Schönen Aufenthalt!",
+whatsapp_btn:"💬 Gastgeber kontaktieren"
+}
+};
+
+const stoveImages = {en:"images/stove-en.jpg", es:"images/stove-es.jpg", fr:"images/stove-fr.jpg", de:"images/stove-de.jpg"};
+
+function setLanguage(lang){
+document.documentElement.lang = lang;
+document.querySelectorAll(".lang-btn").forEach(btn=>{
+btn.classList.toggle("active", btn.dataset.lang === lang);
+});
+document.querySelectorAll("[data-i18n]").forEach(el=>{
+el.textContent=t[lang][el.dataset.i18n];
+});
+document.querySelectorAll("[data-i18n-html]").forEach(el=>{
+el.innerHTML=t[lang][el.dataset.i18nHtml];
+});
+document.getElementById("stove-img").src = stoveImages[lang];
+}
+
+function detectLanguage(){
+var browserLang = (navigator.language || "en").slice(0,2);
+return t[browserLang] ? browserLang : "en";
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+setLanguage(detectLanguage());
+});
+</script>
+
+
+</body>
+</html>
