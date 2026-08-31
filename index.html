@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,7 +132,7 @@ a {
 <div class="card">
 <p data-i18n-html="access_text"></p>
 <p data-i18n-html="access_text2"></p>
-<img src="images/route-map.jpg" alt="Map showing the route from the entry gate to the Marbella Building">
+<img id="route-map-img" src="images/route-map-en.jpg" alt="Map showing the route from the entry gate to the Marbella Building">
 </div>
 
 <div class="card">
@@ -209,7 +210,7 @@ title:"🏡 Self Check-in Guide",
 access:"🔑 Access",
 access_text:"Once you arrive at <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a>, please send me a message or call me at <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a> so we can open the parking gate for you. To park closer to the apartment, drive toward the end of the parking lot on the left-hand side — you can park anywhere you'd like.",
 access_text2:"Follow the path between the buildings (marked with a red dashed line on the map below). We are located at the <strong>Marbella Building</strong>, the second building on your left, and the apartment is on the <strong>1st floor (Apartment 1F)</strong>.",
-access_key:"🔑 The key to enter the apartment will be inside the key box.",
+access_key:"🔑 The key to enter the apartment will be inside the key box. The keycode will be sent to you in a separate message.",
 access_remote:"🚗 For your convenience, there's a remote control for the parking gate inside the apartment.",
 wifi:"📶 Wi-Fi",
 wifi_network_label:"Network:",
@@ -241,7 +242,7 @@ title:"🏡 Guía de Check-in",
 access:"🔑 Acceso",
 access_text:"Al llegar a <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a>, por favor envíame un mensaje o llámame al <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a> para abrirte la puerta del parking. Para aparcar más cerca del apartamento, conduce hacia el final del parking, en el lado izquierdo — puedes aparcar donde quieras.",
 access_text2:"Sigue el camino entre los edificios (marcado con una línea roja discontinua en el mapa de abajo). Estamos ubicados en el <strong>Edificio Marbella</strong>, el segundo edificio a tu izquierda, y el apartamento está en el <strong>1º piso (Apartamento 1F)</strong>.",
-access_key:"🔑 La llave para entrar al apartamento estará dentro de la caja de seguridad.",
+access_key:"🔑 La llave para entrar al apartamento estará dentro de la caja de seguridad. El código te lo enviaremos en un mensaje aparte.",
 access_remote:"🚗 Para tu comodidad, hay un mando a distancia para la puerta del parking dentro del apartamento.",
 wifi:"📶 Wi-Fi",
 wifi_network_label:"Red:",
@@ -273,7 +274,7 @@ title:"🏡 Guide d'arrivée",
 access:"🔑 Accès",
 access_text:"À votre arrivée à <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a>, merci de m'envoyer un message ou de m'appeler au <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a> afin que nous puissions vous ouvrir le portail du parking. Pour vous garer plus près de l'appartement, avancez vers le fond du parking, côté gauche — vous pouvez vous garer où vous le souhaitez.",
 access_text2:"Suivez le chemin entre les bâtiments (indiqué par une ligne rouge en pointillés sur la carte ci-dessous). Nous sommes situés au <strong>Bâtiment Marbella</strong>, le deuxième bâtiment sur votre gauche, et l'appartement se trouve au <strong>1er étage (Appartement 1F)</strong>.",
-access_key:"🔑 La clé pour entrer dans l'appartement se trouve dans la boîte à clés.",
+access_key:"🔑 La clé pour entrer dans l'appartement se trouve dans la boîte à clés. Le code vous sera envoyé dans un message séparé.",
 access_remote:"🚗 Pour votre confort, une télécommande pour le portail du parking se trouve à l'intérieur de l'appartement.",
 wifi:"📶 Wi-Fi",
 wifi_network_label:"Réseau :",
@@ -305,7 +306,7 @@ title:"🏡 Check-in Anleitung",
 access:"🔑 Zugang",
 access_text:"Bei Ankunft in der <a href='https://maps.app.goo.gl/gfZq643jF2o1UwDd6' target='_blank'><strong>C/ Trajano, 20 (Costalita H)</strong></a> schreiben Sie mir bitte eine Nachricht oder rufen Sie mich an unter <a href='tel:+34684335725'><strong>+34 684 335 725</strong></a>, damit wir Ihnen das Parktor öffnen können. Um näher an der Wohnung zu parken, fahren Sie bis zum Ende des Parkplatzes auf der linken Seite — Sie können überall parken.",
 access_text2:"Folgen Sie dem Weg zwischen den Gebäuden (auf der Karte unten rot gestrichelt markiert). Wir befinden uns im <strong>Gebäude Marbella</strong>, dem zweiten Gebäude auf der linken Seite, die Wohnung befindet sich im <strong>1. Stock (Wohnung 1F)</strong>.",
-access_key:"🔑 Der Schlüssel für die Wohnung befindet sich in der Schlüsselbox.",
+access_key:"🔑 Der Schlüssel für die Wohnung befindet sich in der Schlüsselbox. Den Code senden wir Ihnen in einer separaten Nachricht.",
 access_remote:"🚗 Zu Ihrer Bequemlichkeit befindet sich eine Fernbedienung für das Parktor in der Wohnung.",
 wifi:"📶 WLAN",
 wifi_network_label:"Netzwerk:",
@@ -335,6 +336,7 @@ whatsapp_btn:"💬 Gastgeber kontaktieren"
 };
 
 const stoveImages = {en:"images/stove-en.jpg", es:"images/stove-es.jpg", fr:"images/stove-fr.jpg", de:"images/stove-de.jpg"};
+const mapImages = {en:"images/route-map-en.jpg", es:"images/route-map-es.jpg", fr:"images/route-map-fr.jpg", de:"images/route-map-de.jpg"};
 
 function setLanguage(lang){
 document.documentElement.lang = lang;
@@ -348,6 +350,7 @@ document.querySelectorAll("[data-i18n-html]").forEach(el=>{
 el.innerHTML=t[lang][el.dataset.i18nHtml];
 });
 document.getElementById("stove-img").src = stoveImages[lang];
+document.getElementById("route-map-img").src = mapImages[lang];
 }
 
 function detectLanguage(){
